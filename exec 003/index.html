@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+           
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article > aside {
+            background-color: gray;
+            padding: 1px;
+        }
+        footer {
+            background-color: black;
+            color: wheat;
+            text-align: center;
+            padding: 1px;
+            margin 0px
+
+        }
+
+        nav {
+            background-color: black  ;
+            padding: 3px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </header>
+    <main>
+            <section id="assuntos">
+                    <p>Esportes e times</p>
+            </section>
+            <section id="noticias">
+                <article>
+                        <h2>Noticia sobre o Brasil</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, magni. Nesciunt eos rem facere nobis veritatis sunt, tempora et cupiditate, beatae facilis quo tempore nulla provident odit autem, sint perferendis.</p>
+                    <aside>
+                        <p>Artigo escrito por Keven</p>
+                    </aside>
+                </article>
+            
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Keven Christian</p>
+    </footer>
+
+    
+</body>
+</html>

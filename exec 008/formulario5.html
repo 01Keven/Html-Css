@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+    <fieldset>
+        <legend>teste jv</legend>
+        <label for="inivel">Nivel</label>
+            <input type="range" name="nivel" id="inivel" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inivel.value)">
+
+        <output id="ival">5</output>
+
+
+    </fieldset>
+    <fieldset>
+        <legend>Profissao</legend>
+        <label for="iprof">
+            <input type="text" name="prof" id="iprof" list="lstprof"> 
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="PRO">Professor</option>
+            </datalist><br>
+        <label for="imsg">
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="mensagem"></textarea>
+        </label>
+
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Endereço</legend>
+        <label for="iest">
+            <select name="estado" id="iest">
+                <optgroup label="Estados 1">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="BA">Bahia</option>
+                </optgroup>
+
+                <optgroup label="Estados 2">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="BA">Bahia</option>
+                </optgroup>
+            </select>
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>cor</legend>
+        <label for="icor">Cor
+        </label><input type="color" name="cor" id="icor">
+        
+        
+            
+
+        <label for="ifoto">Foto
+            <input type="file" name="foto" id="ifoto">
+        </label>
+
+
+    </fieldset>
+    <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="Sexo" id="imas"><label for="imas">Masculino</label>
+
+        <input type="radio" name="Sexo" id="ife" checked><label for="ife">Feminino</label>
+
+    </fieldset>
+    <fieldset>
+        <legend>Esportes Favoritos</legend>
+        <input type="checkbox" name="sfut" id="ifut" checked><label for="ifut">Futebol</label>
+        <input type="checkbox" name="volei" id="ivolei"><label for="ivolei">Volei</label>
+        <input type="checkbox" name="senis" id="itenis"><label for="itenis">Tenis</label>
+        
+    </fieldset>
+        <form action="cadastro.php">
+        
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="limpar">
+            </p>
+        </form>
+</body>
+</html>

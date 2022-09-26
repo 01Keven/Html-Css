@@ -5,17 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-style.css">
 </head>
-<body>
+<body onresize="mudouT()">
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+        menu
+        </span>
+        <menu id="menu1">
             <ul>
+                <li> <a href="">Opção 1</a></li>
+                
+                <li nome="clicar"> <a href="#">Opção 1</a></li>
+                
                 <li> <a href="#">Opção 1</a></li>
+                
                 <li> <a href="#">Opção 1</a></li>
-                <li> <a href="#">Opção 1</a></li>
-                <li> <a href="#">Opção 1</a></li>
+                
             </ul>
         </menu>
     </header>
@@ -30,7 +39,26 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ad eaque culpa aliquam officiis dicta quae laudantium, odio quibusdam praesentium veritatis doloremque. Ab commodi odit reiciendis deleniti cupiditate sunt accusamus.</p>
             </article>
         </main>
+
+        <script>
+
+            function mudouT() {
+                if (window.innerWidth >= 768)
+                    menu1.style.display = 'block'
+                    else {
+                        menu1.style.display = 'none'
+                    }
+            } 
+
+            function clickMenu() {
+                if (menu1.style.display == 'block') {
+                    menu1.style.display = 'none'
+                } else {
+                    menu1.style.display = 'block'
+                }
+            }
+        </script>
         
 </body>
-           
+    
 </html>

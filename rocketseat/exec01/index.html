@@ -4,19 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Keven">
+    <meta name="description" content="pagina de estudos">
     <title>Rocketseat
     </title>
+    <link rel="stylesheet" href="style.css">
     <style>
        * {
             font-family: Arial, Helvetica, sans-serif;
         }  
         
-        .imagens {
-            width: 15vh;
-            height: 10em;
-            margin: auto;
-        }
-       
     </style>
 </head>
 <body>
@@ -32,8 +29,8 @@
 
         <p>Exemplo texto em <em>Itálico</em></p> <br>
 
-        <div class="imagens">
-            <img src="https://img.elo7.com.br/product/original/4266133/homer-simpson-png-sem-fundo-vetorizado-100-editavel-homer-simpson-png.jpg" alt="homer">
+        <div>
+            <img src="#" alt="">
         </div>
 
         <div class="editavel" contenteditable="true"> EDITE AQUI</div>
@@ -50,8 +47,123 @@
                 <li>uva</li>
                 <li>pera</li>
                 <li>melancia</li>
+        <br>
+        <h1>Abreviação</h1>
+            <p>usando <abbr title="HyperText Markup Language">HTML</abbr> para fazer esse projeto</p>
+
+            <h1>Contato</h1>
+            <p>exemplo de contato: Keven<address> 75 9 88342641 </address></p>
+
+            <div class="cart"> <h1>Elementos genericos</h1>
+                <span>camiseta</span>
+                <span>$100</span>
+            </div>
+
+            <h1>Links</h1>
+            <ul>
+                <li><a href="#site">site</a></li>
+                <li><a href="#email">email</a></li>
+                <li><a href="#tell">tell</a></li>
+            </ul>
+
+            <h1 id="site">Site</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo libero veritatis animi aspernatur mollitia porro neque culpa fuga atque. Corporis doloremque quia, quis porro vel eveniet! Facilis, perspiciatis dicta?</p>
+
+            
+            <h1 id="email">Email</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo libero veritatis animi aspernatur mollitia porro neque culpa fuga atque. Corporis doloremque quia, quis porro vel eveniet! Facilis, perspiciatis dicta?</p>
+
+                
+            <h1 id="tell">Tell</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo libero veritatis animi aspernatur mollitia porro neque culpa fuga atque. Corporis doloremque quia, quis porro vel eveniet! Facilis, perspiciatis dicta?</p>
+            
+            <h1>Tabela basica</h1>
+            
+            <table>
+
+                <caption>Tabela de pessoas mostrando idade</caption> <!--caption: para descrever o conteudo da tabela-->
+
+                <thead>
+                    <tr>
+                        <th>nome</th>
+                        <th>idade</th>
+                    </tr>
+                </thead>
+                    
+                <tbody>
+                    <tr>
+                        <td>keven</td>
+                        <td>19</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Fernanda</td>
+                        <td>18</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>Resto</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <h1>Tabela Complexa</h1>
+
+            <table>
+
+                <colgroup>
+                    <col>
+                    <col span="2" style="background-color: red;">
+                    <col span="2" style="background-color: blue;">
+                </colgroup>
+
+                <caption>produtos produzidos vs vendidos por loja</caption>
+
+                <thead>
+                    <tr>
+                        <th rowspan="2"></th> <!--para fazer espaços na tabela-->
+                        <th scope="colgroup" colspan="2">Americanas</th>
+                        <th scope="colgroup" colspan="2">Pernanbucanas</th> <!--para ocupar numero de colunas-->
+                    </tr>
+                    <tr>
+                        <th scope="col">produzidos</th>
+                        <th scope="col">vendidos</th>
+                        <th scope="col">produzidos</th>
+                        <th scope="col">vendidos</th>
+                    </tr>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">Vassouras</th>
+                            <td>50</td>
+                            <td>30</td>
+                            <td>20</td>
+                            <td>10</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Livros</th>
+                            <td>60</td>
+                            <td>30</td>
+                            <td>10</td>
+                            <td>40</td>
+                        </tr>
+
+                        <tfoot>
+                            <tr>
+                                <th>Total</th>
+                            </tr>
+                        </tfoot>
+                    </tbody>
+
+                    
+                </thead>
+            </table>
         <!--
-            Atributos globais mais utilizados
+            -Atributos globais mais utilizados
 
             - class
             - contenteditable 
@@ -64,7 +176,7 @@
 
             https://developer.mozilla.org/pt-BR/docs/Web/HTML
 
-            caracteres reservados:
+            -caracteres reservados:
 
             &lt; // < maior que
             &gt; // > menor que
@@ -72,12 +184,12 @@
             &quot; // ""
             &apos; // ''
 
-            Listas:
+            -Listas:
             ol // lista ordenada 1,2,3,4...
             ul // lista não ordenada 
             li* // 
 
-            Citações:
+           -Citações:
 
             blockquote
 
@@ -85,6 +197,32 @@
 
             q
 
+            -Abreviação:
+
+            abbr
+
+            -Contato:
+
+            addres
+
+            -Representação de codigos
+
+            code // para linha menor de codigo
+
+            pre // para linha maior de codigo
+
+            -Elementos genericos
+
+            div // bloco, quebra de linha
+            span // nao quebra linha
+
+            -Hyperlink
+
+            download // se colocado junto com <a> faz download
+            
+            target // 
+
+            
         -->
 </body>
 </html>
